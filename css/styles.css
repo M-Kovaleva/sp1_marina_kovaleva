@@ -19,22 +19,25 @@ body{
     flex-direction: column;
 }
 .page-header{
-    background-color: var(--color-primary);
+    background-color: var(--color-accent);
 }    
 .page-main{
     background-color: var(--color-accent);
     flex-grow: 1;
 }
 .page-footer{
-    background-color: var(--color-primary);
+    background-color: var(--color-accent);
 }
 .container{
-    background-color: var(--color-accent);
+    background-color: var(--color-primary);
     height: 100%;
     max-width: 120rem;
     display: flex;
     flex-direction: column;
     margin: 0 auto;
+}
+.page-main .container{
+    background-color: var(--color-accent);
 }
 .header-container{
     margin-right: 1.5rem;
@@ -50,7 +53,6 @@ h1{
     font-weight: 900;
     font-size: 3rem;
     color: var(--color-accent);
-    line-height: 1.1;
     margin: 0;
 }
 
@@ -60,6 +62,7 @@ h2{
     font-size: 2.25rem;
     color: var(--color-primary);
     margin: 0;
+    line-height:initial;
 }
 
 h3{
@@ -91,7 +94,7 @@ img{
     border-radius: 0;
 }
 .fa-solid{
-    color: var(--color-secondary);
+    color: var(--color-primary);
   } 
 
   .cta-button-yell{
@@ -101,10 +104,13 @@ img{
   border-style: solid;
   border-width: medium;
   border-color: var(--color-secondary);
-  padding: 0.75rem 1rem 0.75rem 1rem;
+  padding-top: 0.75rem;
+  padding-bottom: 0.75rem;
   font-family: var(--font);
   font-size: 1.5rem;
   font-weight: var(--font-weight-heading);
+  width: 12.5rem;
+  display: inline-block;
 }
 .cta-button-yell:hover{
     background-color: var(--color-secondary);
@@ -117,10 +123,13 @@ img{
   border-style: solid;
   border-width: medium;
   border-color: var(--color-primary);
-  padding: 0.75rem 1rem 0.75rem 1rem;
+  padding-top: 0.75rem;
+  padding-bottom: 0.75rem;
   font-family: var(--font);
   font-size: 1.5rem;
   font-weight: var(--font-weight-heading);
+  width: 12.5rem;
+  display: inline-block;
 }
 .cta-button-viol:hover{
     background-color: var(--color-primary);
@@ -132,10 +141,13 @@ img{
   color: var(--color-accent);
   background-color: var(--color-primary);
   border-radius: var(--img-border-radius);
-  padding: 0.75rem 1rem 0.75rem 1rem;
+  padding-top: 0.75rem;
+  padding-bottom: 0.75rem;
   font-family: var(--font);
   font-size: 1.5rem;
   font-weight: var(--font-weight-heading);
+  width: 12.5rem;
+  display: inline-block;
 }
   /* Home */
 
@@ -149,15 +161,21 @@ img{
     min-height: 95vh
 }
 .hero-item{
-    margin: 0 2.25rem 4rem 2.25rem ;
+    margin: 0 2.25rem 0 2.25rem ;
 }
 .hero-item h2{
     color: var(--color-accent);
+    margin-bottom: 1.5rem;
+}
+.hero-item a{
+    margin-bottom: 4.75rem;
 }
 
 .info-item a{
     text-decoration: underline;
 }
+
+.
 
   /* Visit-info */
   

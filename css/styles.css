@@ -1,0 +1,213 @@
+@import url('https://fonts.googleapis.com/css2?family=Hind+Madurai:wght@300;400;500;600;700&family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&display=swap');
+@import "../css/media.css";
+@import "../css/variables.css";
+
+body{
+    margin: 0;
+    padding: 0;
+    font-family: var(--font);
+    font-weight: var(--text-weight-paragraph);
+    font-size: var(--text-size-paragraph-mobile);
+    font-style: normal;
+    color: var(--color-primary);
+    line-height: 1.6;
+    text-align: center;
+}
+.page-wrapper{
+    background-color: var(--color-accent);
+    display: flex;
+    flex-direction: column;
+}
+.page-header{
+    background-color: var(--color-primary);
+}    
+.page-main{
+    background-color: var(--color-accent);
+    flex-grow: 1;
+}
+.page-footer{
+    background-color: var(--color-primary);
+}
+.container{
+    background-color: var(--color-accent);
+    height: 100%;
+    max-width: 120rem;
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+}
+.header-container{
+    margin-right: 1.5rem;
+    margin-left: 1.5rem;
+}
+.footer-container{
+    margin-right: 1.5rem;
+    margin-left: 1.5rem;
+}
+
+h1{
+    font-family: var(--font);
+    font-weight: 900;
+    font-size: 3rem;
+    color: var(--color-accent);
+    line-height: 1.1;
+    margin: 0;
+}
+
+h2{
+    font-family: var(--font);
+    font-weight: var(--font-weight-heading);
+    font-size: 2.25rem;
+    color: var(--color-primary);
+    margin: 0;
+}
+
+h3{
+    font-family: var(--font);
+    font-weight: var(--font-weight-heading);
+    font-size: 1.5rem;
+    color: var(--color-primary);
+    margin: 0;
+}
+
+h4{
+    font-family: var(--font);
+    font-weight: var(--font-weight-heading);
+    font-size: 1.25rem;
+    color: var(--color-primary);
+    margin: 0;
+}
+
+a{
+    text-decoration: none;
+    color: var(--color-primary);
+}
+
+img{
+    border-radius: var(--img-border-radius);  
+}
+
+.logo_image{
+    border-radius: 0;
+}
+.fa-solid{
+    color: var(--color-secondary);
+  } 
+
+  .cta-button-yell{
+  text-align: center;
+  color: var(--color-accent);
+  border-radius: var(--img-border-radius);
+  border-style: solid;
+  border-width: medium;
+  border-color: var(--color-secondary);
+  padding: 0.75rem 1rem 0.75rem 1rem;
+  font-family: var(--font);
+  font-size: 1.5rem;
+  font-weight: var(--font-weight-heading);
+}
+.cta-button-yell:hover{
+    background-color: var(--color-secondary);
+    color: var(--color-primary);
+}
+.cta-button-viol{
+  text-align: center;
+  color: var(--color-primary);
+  border-radius: var(--img-border-radius);
+  border-style: solid;
+  border-width: medium;
+  border-color: var(--color-primary);
+  padding: 0.75rem 1rem 0.75rem 1rem;
+  font-family: var(--font);
+  font-size: 1.5rem;
+  font-weight: var(--font-weight-heading);
+}
+.cta-button-viol:hover{
+    background-color: var(--color-primary);
+    color: var(--color-accent);
+}
+
+.cta-button{
+  text-align: center;
+  color: var(--color-accent);
+  background-color: var(--color-primary);
+  border-radius: var(--img-border-radius);
+  padding: 0.75rem 1rem 0.75rem 1rem;
+  font-family: var(--font);
+  font-size: 1.5rem;
+  font-weight: var(--font-weight-heading);
+}
+  /* Home */
+
+  .hero-home{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    background: var(--background-gradient), url('../image/cute_boy_dressed_space_astronaut_mobile.jpg') center top no-repeat; 
+    background-size: cover;
+    min-height: 95vh
+}
+.hero-item{
+    margin: 0 2.25rem 4rem 2.25rem ;
+}
+.hero-item h2{
+    color: var(--color-accent);
+}
+
+.info-item a{
+    text-decoration: underline;
+}
+
+  /* Visit-info */
+  
+.hero-visit{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    background: var(--background-gradient), url('../image/newton_science_museum_mobile.jpg') center top no-repeat; 
+    background-size: cover;
+    min-height: 30vh
+}
+  /* Exhibitions */
+
+.hero-exhb{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    background: var(--background-gradient), url('../image/plasma_ball_exhibition_mobile.jpg') center top no-repeat; 
+    background-size: cover;
+    min-height: 95vh
+}
+
+  /* Space */
+
+  .hero-space{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    background: var(--background-gradient), url('../image/earth_seen_from_space_mobile.jpg') center top no-repeat; 
+    background-size: cover;
+    min-height: 95vh
+}
+
+
+
+
+
+
+
+
+  /* Header */
+
+ 
+  .menu, 
+#sidebar-active {
+    display: none;
+}
+#sidebar-active:checked ~ .menu {
+    display: block;
+}

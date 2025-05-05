@@ -1,0 +1,14 @@
+:root{
+    --color-accent: #FFF;
+    --color-primary: #5E15D8;
+    --color-secondary: #F8D41B;
+    --color-background: #F8EFFF;
+    --font: "Nunito Sans", sans-serif;
+    --text-weight-paragraph: 400;
+    --text-size-paragraph-mobile: 1rem;
+    --font-weight-heading: 700;
+    --img-border-radius: 0.75rem;
+    --background-gradient: linear-gradient(180deg,rgba(116, 15, 217, 0) 31%, rgba(94, 21, 216, 0.55) 71%, rgba(116, 15, 217, 0.55) 77%);
+
+}
+   

@@ -104,8 +104,8 @@ img{
   border-style: solid;
   border-width: medium;
   border-color: var(--color-secondary);
-  padding-top: 0.75rem;
-  padding-bottom: 0.75rem;
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
   font-family: var(--font);
   font-size: 1.5rem;
   font-weight: var(--font-weight-heading);
@@ -123,8 +123,8 @@ img{
   border-style: solid;
   border-width: medium;
   border-color: var(--color-primary);
-  padding-top: 0.75rem;
-  padding-bottom: 0.75rem;
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
   font-family: var(--font);
   font-size: 1.5rem;
   font-weight: var(--font-weight-heading);
@@ -141,13 +141,44 @@ img{
   color: var(--color-accent);
   background-color: var(--color-primary);
   border-radius: var(--img-border-radius);
-  padding-top: 0.75rem;
-  padding-bottom: 0.75rem;
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
   font-family: var(--font);
   font-size: 1.5rem;
   font-weight: var(--font-weight-heading);
   width: 12.5rem;
   display: inline-block;
+}
+/* Header */
+.header-container .fa-solid{
+    color: var(--color-secondary);
+}
+.menu-item a{
+    color: var(--color-accent);
+}
+
+/* Footer */
+
+.footer-container-item ul{
+    list-style: none;
+    padding-left: 0rem;
+}
+.footer-container-item li{
+    text-align: center;
+}
+.footer-container-item{
+    color: var(--color-accent);
+    display: block;
+}
+.footer-container-item a{
+    color: var(--color-accent);
+}
+.footer-container-item p{
+    text-align: center;
+}
+
+.footer-container-item .fa-brands{
+    color: var(--color-secondary);
 }
   /* Home */
 
@@ -175,7 +206,17 @@ img{
     text-decoration: underline;
 }
 
-.
+.services{
+    background-color: var(--color-background);
+}
+
+.news{
+    background-color: var(--color-secondary);
+}
+
+.sign-in-item{
+    background-color: var(--color-secondary);
+}
 
   /* Visit-info */
   

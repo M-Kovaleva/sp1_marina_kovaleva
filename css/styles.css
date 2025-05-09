@@ -12,11 +12,13 @@ body{
     color: var(--color-primary);
     line-height: 1.6;
     text-align: center;
+    overscroll-behavior-y: none;
 }
 .page-wrapper{
     background-color: var(--color-accent);
     display: flex;
     flex-direction: column;
+    height: 100vh;
 }
 .page-header{
     background-color: var(--color-accent);
@@ -31,7 +33,7 @@ body{
 .container{
     background-color: var(--color-primary);
     height: 100%;
-    max-width: 94.5rem;
+    max-width: 120rem;
     display: flex;
     flex-direction: column;
     margin: 0 auto;
@@ -84,7 +86,7 @@ a{
 }
 
 img{
-    border-radius: var(--img-border-radius);  
+    border-radius: var(--img-border-radius);
 }
 
 .logo_image{
@@ -251,76 +253,85 @@ display: none;
 
 .services{
     background-color: var(--color-background);
+
   
    
 }
 .services-container{
-    margin-left: 1.5rem;
-    margin-right: 1.5rem;
+    height: auto;
+    margin-left: 1rem;
+    margin-right: 1rem;
+    margin-bottom: 4px;
     display: flex;
     align-items: center;
-    justify-content:space-between;
-    gap: 24px;
-    scroll-behavior: auto;
-    overflow-y: auto;
+    justify-content:space-around;
+    gap: 16px;
+    scroll-behavior: smooth;
+    overflow-y: hidden;
+    overflow-x:scroll;
     overscroll-behavior-x: contain;
     scroll-snap-type: x mandatory;
-    scrollbar-width: none;
+    scrollbar-width:none;
     
-
-  
-
 }
 .services-container::-webkit-scrollbar{
-    display: none;
+    display:none;
 }
 
 .services-item{
+    margin-left: 0.5rem;
+    margin-right: 0.5rem;
+    margin-top: 1rem;
+    margin-bottom: 2rem;
     width: 309px;
     scroll-snap-align: start;
+    border-radius: 12px;
+    box-shadow: var(--shadow-gradient);
 }
-
-
 .service-info{
     width: 309px;
     height: 150px;
     background-color: var(--color-accent);
-    border-radius: 0 0 12px 12px;
+    border-radius: 0 0 12px 12px; 
 }
 
 .exhb-item{
-    
     display: block;
     border-radius: 12px 12px 0 0;
-
+}
+.services-item img{
+    background-color: var(--color-primary);  
 }
 
-@media(min-width: 900px){
-    .services-container{
-        margin-left: 3rem;
-        margin-right: 3em;
+.services-item img:hover{
+    opacity: 58%;
     
+}
+@media (min-width: 412px){
+    .services-container{
+        margin-left: 2rem;
+        margin-right: 2rem;
+        gap: 16px;
     }
 }
-@media(min-width: 1460px){
+
+@media (min-width: 1400px){
     .services-container{
-        margin-left: 5rem;
-        margin-right: 5em;
-        display: flex;
-        align-items: center;
-        justify-content:space-between;
-        gap: 24px;
-          
+        justify-content:center;
+        margin-left: 2rem;
+        margin-right: 2rem;
+        gap: 16px;
     }
-    
-    
-    }
-
-
-
+}
 
 .news {
-    background-color: var(--color-secondary);
+    background: var(--color-secondary);
+}
+.news-img{
+    background: var(--color-primary);
+}
+.news img:hover{
+    opacity: 58%;
 }
 
 .sign-in-item{
@@ -338,6 +349,11 @@ display: none;
     background-size: cover;
     min-height: 30vh
 }
+
+.services-visit-page{
+    background-color: var(--color-secondary);
+}
+
   /* Exhibitions */
 
 .hero-exhb{
@@ -361,6 +377,8 @@ display: none;
     background-size: cover;
     min-height: 95vh
 }
+
+
 
 
 

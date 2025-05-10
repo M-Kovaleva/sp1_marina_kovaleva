@@ -15,6 +15,28 @@ body{
     overscroll-behavior-y: none;
 }
 
+@media(min-width:900px){
+    body{
+        font-size:var(--text-size-paragraph-desktop);
+    }
+
+    h2{
+        font-family: var(--font);
+        font-weight: 900;
+        font-size: 3rem;
+        color: var(--color-accent);
+        margin: 0;
+    }
+    .hero-item h2{
+        font-family: var(--font);
+        font-weight: 900;
+        font-size: 3rem;
+        color: var(--color-accent);
+        margin: 0;
+
+    }
+}
+
 .page-wrapper{
     background-color: var(--color-accent);
     display: flex;
@@ -248,7 +270,9 @@ display: none;
         justify-content: center;
         align-items:self-start;
         text-align: start;
-     
+    }
+    .hero-item{
+        margin-left: 2rem;
     }
 }
 
@@ -261,6 +285,7 @@ display: none;
 }
 .hero-item{
     margin-left: 2rem;
+    margin-right: 2rem;
 }
 
 .hero-item h2{
@@ -333,7 +358,7 @@ display: none;
 .services .cta-button-viol{
     margin-left: 2rem;
     margin-right: 2rem;
-    margin-bottom: 2.25rem;
+    margin-bottom: 3rem;
 } 
 .section-name{
     margin-right: 2rem;
@@ -400,6 +425,9 @@ display: none;
 .service-info h4:hover{
     color: var(--color-secondary);
 }
+.service-info p{
+    font-size: var(--text-size-paragraph-mobile);
+}
 
 @media (min-width: 412px){
     .services-container{
@@ -428,8 +456,7 @@ display: none;
     display: flex;
     flex-direction: column;
     align-items: center;
-
-    margin-top: 8rem;
+    margin-top: 7rem;
  
 }
 .news .exhb{
@@ -512,8 +539,35 @@ display: none;
 
 
 /* Sign In Section*/
+.sign-in{
+    position: relative;
+    background: var(--color-secondary);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  
+}
+@media(min-width:1140px){
+    .sign-in{
+        flex-direction: row;
+        flex: 1;
+        justify-content:flex-start;
+        gap: 10rem;
+    }
+   
+}
 .sign-in-item{
     background-color: var(--color-secondary);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-right: 2rem;
+
+  
+}
+.sign-in img{
+    width: 100%;
+    border-radius: 0;
 }
 
 /* Visit-info Page*/

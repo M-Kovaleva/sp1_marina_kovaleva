@@ -146,6 +146,9 @@ img{
   width: 12.5rem;
   display: inline-block;
 }
+.cta-button:hover{
+    color:var(--color-secondary)
+}
 /* Header */
 .header-container{
     margin-right: 1.5rem;
@@ -225,6 +228,8 @@ display: none;
 }
   /* Home */
 
+  /* Hero Section */
+
   .hero-home{
     position: relative;
     display: flex;
@@ -234,17 +239,41 @@ display: none;
     background-size: cover;
     min-height: 95vh;
     margin-bottom: 2.25rem;
+    text-align: center;
+}
+@media(min-width:700px){
+    .hero-home{
+        background: var(--background-gradient), url('../image/cute_boy_dressed_space_astronaut_desktop_1.jpg') center top no-repeat;
+        background-size: cover;
+        justify-content: center;
+        align-items:self-start;
+        text-align: start;
+     
+    }
+}
+
+@media (min-width: 1400px){
+    .hero-home{
+        background: var(--background-gradient), url('../image/cute-boy-dressed-space-astronaut_desktop_2.jpg') center top no-repeat;
+        background-size: cover;
+    }
+    
 }
 .hero-item{
-    margin: 0 2.25rem 0 2.25rem ;
+    margin-left: 2rem;
 }
+
 .hero-item h2{
     color: var(--color-accent);
     margin-bottom: 1.5rem;
 }
 .hero-item a{
-    margin-bottom: 4.75rem;
+    margin-bottom: 3rem;
+    
 }
+
+/* Info Section */
+
 .info{
     display: flex;
     flex-direction: column;
@@ -276,6 +305,9 @@ display: none;
 .info-item a{
     text-decoration: underline;
 }
+.info-item a:hover{
+    color: var(--color-secondary);
+}
 .info-item i{
     margin-top: 10px;
   
@@ -292,9 +324,22 @@ display: none;
 .info-item-text{
     margin-left: 2.25rem;
 }
+
+/* Services Sections - Exhibitions, Activities ect. */
     
 .services{
     background-color: var(--color-background);
+}
+.services .cta-button-viol{
+    margin-left: 2rem;
+    margin-right: 2rem;
+    margin-bottom: 2.25rem;
+} 
+.section-name{
+    margin-right: 2rem;
+    margin-left: 2rem;
+    margin-top: 2rem;
+   
 }
 .services-container{
     height: auto;
@@ -327,25 +372,35 @@ display: none;
     border-radius: 12px;
     box-shadow: var(--shadow-gradient);
 }
+
 .service-info{
-    width: 309px;
+    max-width: 309px;
     height: 150px;
     background-color: var(--color-accent);
     border-radius: 0 0 12px 12px; 
+    padding-top: 0.75rem ;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    padding-bottom: 1.5rem;
 }
 
-.exhb-item{
+.services .exhb{
+    width: 309px;
+    height: 309px;
+    background-color: var(--color-primary);
     display: block;
-    border-radius: 12px 12px 0 0;
+    border-radius: 0.75rem 0.75rem 0 0;
 }
 .services-item img{
-    background-color: var(--color-primary);  
+    border-radius: 0.75rem 0.75rem 0 0;
+}
+.services-item img:hover{
+    opacity: var(--img-opacity);
+}
+.service-info h4:hover{
+    color: var(--color-secondary);
 }
 
-.services-item img:hover{
-    opacity: 58%;
-    
-}
 @media (min-width: 412px){
     .services-container{
         margin-left: 2rem;
@@ -363,21 +418,105 @@ display: none;
     }
 }
 
+/* News Section*/
+
 .news {
+    position: relative;
     background: var(--color-secondary);
+    background-size: cover;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    margin-top: 8rem;
+ 
+}
+.news .exhb{
+    position: relative;
+    display: flex;
+    background-color: var(--color-primary);
+    width: 309px;
+    height: 309px;
+    display: block;
+    border-radius: var(--img-border-radius);
+    box-shadow: var(--shadow-gradient);
+    margin-top: -40px;
+    margin-left: 2rem;
+    margin-right: 2rem;
+    margin-bottom: 1rem;
 }
 .news img{
-    margin-top: -40px;
+    width: 100%;
+    border-radius: var(--img-border-radius);
 }
 .news img:hover{
-    opacity: 58%;
+    opacity: var(--img-opacity);
 }
 
+
+.news-content{
+    display: flex;
+    flex-direction: column;
+    margin-left: 2rem;
+    margin-right: 2rem;
+    text-align: center;
+    align-items: center;
+    
+}
+.news-content p{
+    text-align: left;
+}
+
+.news-content a{
+    margin-top: 2.25rem;
+    margin-bottom: 2.25rem;
+}
+@media (min-width: 600px){
+    .news{
+        align-items:start;
+
+    }
+    .news-content{
+        text-align: left;
+        align-items: start;
+    }
+
+    .news .exhb{
+        margin-bottom: 2rem;
+    }  
+    }
+    @media (min-width: 1140px){
+        .news{
+            flex-direction: row;
+            justify-content:space-evenly;
+        }
+        
+        .news .exhb{
+            width: 615px;
+            height: 615px;
+            margin-bottom: 4rem;
+        }
+       
+        .news img{
+           width: 615px;
+           height: 615px;
+        }
+        .news-content{
+            max-width: 444px;
+            margin-top: 8rem;
+           
+        }
+
+    }
+
+
+/* Sign In Section*/
 .sign-in-item{
     background-color: var(--color-secondary);
 }
 
-  /* Visit-info */
+/* Visit-info Page*/
   
 .hero-visit{
     position: relative;
@@ -393,7 +532,7 @@ display: none;
     background-color: var(--color-secondary);
 }
 
-  /* Exhibitions */
+  /* Exhibitions Page*/
 
 .hero-exhb{
     position: relative;
@@ -405,7 +544,7 @@ display: none;
     min-height: 95vh
 }
 
-  /* Space */
+  /* Life n Universe Exhbition Page */
 
   .hero-space{
     position: relative;

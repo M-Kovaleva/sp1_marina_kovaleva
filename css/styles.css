@@ -616,34 +616,30 @@ display: none;
     justify-content: end;
     background: var(--background-gradient), url('../image/newton_science_museum_mobile.jpg') center top no-repeat; 
     background-size: cover;
-    min-height: 25vh;
+    min-height: 30vh;
     text-align: center;
 }
 
-
-@media(min-width:700px){
+@media(min-width:600px){
     .hero-visit{
         background: var(--background-gradient), url('../image/newton_science_desktop.jpg') center top no-repeat;
         background-size: cover;
         justify-content: center;
         text-align: start;
+        min-height: 70vh;
     }
     .hero-item{
         margin-left: 2rem;
     }
+}
     
+@media(min-width:900px){
 
-}
-@media(min-width:960px){
     .hero-visit{
-        min-height: 40vh;
+        min-height: 100vh;
+    }
 }
-}
-@media(min-width:1400px){
-    .hero-visit{
-        min-height: 60vh;
-}
-}
+    
 
 .hero-item{
     margin-left: 2rem;
@@ -680,20 +676,23 @@ display: none;
 .visit-info{
     display: grid;
     row-gap: 1.5rem;
-    column-gap: 1.5rem;
     grid-template-columns:auto;
     margin-left: 2rem;
     margin-right: 2rem;
+    margin-bottom: 4rem;
 }
-@media(min-width: 500px){
+@media(min-width: 600px){
     .visit-info{
         grid-template-columns:auto auto;
+        row-gap: 2.25rem;
     }
 }
 
 @media(min-width: 1100px){
     .visit-info{
         grid-template-columns:auto auto auto;
+        row-gap: 3.25rem;
+        column-gap: 3rem;
     }
 }
 
@@ -705,7 +704,7 @@ display: none;
 .visit-info-item{
     background: var(--color-background);
     min-width: 240px;
-    height: 279px;
+    min-height: 279px;
     border-radius: var(--img-border-radius);
     box-shadow: var(--shadow-gradient);
     display: flex;
@@ -714,16 +713,9 @@ display: none;
     align-items: center;
 
 }
-.visit-info-item-price{
+#info-price{
     background: var(--color-secondary);
-    min-width: 240px;
-    height: 279px;
-    border-radius: var(--img-border-radius);
-    box-shadow: var(--shadow-gradient);
-    display: flex;
-    flex-direction: column;
-    justify-content: start;
-    align-items: center;
+ 
 
 }
 
@@ -732,6 +724,10 @@ display: none;
     font-size: var(--text-size-paragraph-mobile);
     line-height: 1rem;
 
+}
+.visit-info-item-content{
+    margin-top: 1.5rem;
+    margin-bottom: 1.5rem;
 }
 
 .visit-info-item-content .active {

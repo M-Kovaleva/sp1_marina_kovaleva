@@ -35,6 +35,7 @@ body{
         line-height:initial
 
     }
+
 }
 
 .page-wrapper{
@@ -66,8 +67,8 @@ body{
 }
 
 .footer-container{
-    margin-right: 1.5rem;
-    margin-left: 1.5rem;
+    margin-right: 2rem;
+    margin-left: 2rem;
 }
 
 h1{
@@ -180,8 +181,8 @@ img{
 }
 /* Header */
 .header-container{
-    margin-right: 1.5rem;
-    margin-left: 1.5rem;
+    margin-right: 2rem;
+    margin-left: 2rem;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -284,7 +285,6 @@ display: none;
         background: var(--background-gradient), url('../image/cute_boy_dressed_space_astronaut_desktop_1.jpg') center top no-repeat;
         background-size: cover;
         justify-content: center;
-        align-items:self-start;
         text-align: start;
     }
     .hero-item{
@@ -410,7 +410,7 @@ display: none;
     margin-bottom: 2rem;
     width: 309px;
     scroll-snap-align: start;
-    border-radius: 12px;
+    border-radius: var(--img-border-radius);
     box-shadow: var(--shadow-gradient);
 }
 
@@ -555,41 +555,55 @@ display: none;
 
 /* Sign In Section*/
 .sign-in{
-    position: relative;
     background: var(--color-secondary);
     display: flex;
+ 
     flex-direction: column;
-    justify-content: space-between;
   
+   
 }
 @media(min-width:1343px){
     .sign-in{
         flex-direction: row;
-        flex: 1;
-        justify-content:flex-start;
-        gap: 8rem;
+        justify-content: space-between;
     }
-   
+
+    .sign-in-item{
+        margin-right: 7rem;
+    }
+    .sign-in-item-content{
+        margin-top: 0;
+        margin-bottom: 0;
+    
 }
+}
+
 .sign-in-item{
-    background-color: var(--color-secondary);
     display: flex;
     flex-direction: column;
     justify-content: center;
+   
+
 }
 .sign-in-item-content{
     display: flex;
     flex-direction: column;
-    justify-content: center;
     margin-left: 2rem;
     margin-right: 2rem;
-    margin-top: 1.75rem;
-    margin-bottom: 5rem;
+    margin-top: 2rem;
+    margin-bottom: 3rem;
+
+}
+.sign-in-img{
+    display:contents;
+
+
 }
 .sign-in img{
-    width: 100%;
+    min-width: 51%;
     border-radius: 0;
 }
+
 
 /* Visit-info Page*/
   
@@ -600,11 +614,112 @@ display: none;
     justify-content: end;
     background: var(--background-gradient), url('../image/newton_science_museum_mobile.jpg') center top no-repeat; 
     background-size: cover;
-    min-height: 30vh
+    min-height: 25vh;
+    text-align: center;
+}
+
+
+@media(min-width:700px){
+    .hero-visit{
+        background: var(--background-gradient), url('../image/newton_science_desktop.jpg') center top no-repeat;
+        background-size: cover;
+        justify-content: center;
+        text-align: start;
+    }
+    .hero-item{
+        margin-left: 2rem;
+    }
+}
+@media(min-width:960px){
+    .hero-visit{
+        min-height: 40vh;
+}
+}
+@media(min-width:1400px){
+    .hero-visit{
+        min-height: 60vh;
+}
+}
+
+.hero-item{
+    margin-left: 2rem;
+    margin-right: 2rem;
+}
+
+.hero-item h2{
+    color: var(--color-accent);
+    margin-bottom: 1.5rem;
+}
+.hero-item a{
+    margin-bottom: 3rem;
+    
+}
+
+.nav-page {
+    margin-bottom: 4rem;
+    margin-top: 1rem;
+    margin-left: 2rem;
+    margin-right: 0;
+}
+.nav-page .active{
+    text-decoration: underline;
+}
+
+.nav-page .active:hover{
+    color: var(--color-secondary);
+}
+
+.visit-info{
+    display: grid;
+    grid-template-columns:1fr;
+    gap: 1.5rem;
+}
+.visit-info-item{
+    background: var(--color-background);
+    width: 323px;
+    height: 279px;
+    border-radius: var(--img-border-radius);
+    box-shadow: var(--shadow-gradient);
+    display: flex;
+    flex-direction: column;
+    justify-content:start;
+    align-items: center;
+
+}
+.visit-info-item-price{
+    background: var(--color-secondary);
+    width: 323px;
+    height: 279px;
+    border-radius: var(--img-border-radius);
+    box-shadow: var(--shadow-gradient);
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: center;
+
+}
+.visit-info-item p{
+    font-size: var(--text-size-paragraph-mobile);
+    line-height: 1rem;
+   
+
+}
+.visit-info-item-price p{
+    font-size: var(--text-size-paragraph-mobile);
+    line-height: 1rem;
+
+}
+
+.visit-info-item-content .active {
+    text-decoration: underline;
+}
+.visit-info-item-content .active:hover{
+    color: var(--color-secondary);
 }
 
 .services-visit-page{
     background-color: var(--color-secondary);
+    
 }
 
   /* Exhibitions Page*/

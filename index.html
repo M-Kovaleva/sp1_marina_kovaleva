@@ -16,16 +16,25 @@
         <header class="page-header">
             <div class="container">
                 <div class="header-container">
-                    <a href="index.html" title="Logo"><img src="logo/logo_text_yellow.png" alt="name science museum logo" class="logo_image"/></a>    
-                    <input type="checkbox" id="sidebar-active"/>
-                    <label for="sidebar-active" class="ham-icon" aria-label="hamburgermenu for mobile users" title="Menu"><i class="fa-solid fa-bars"></i></label>              
-                    <nav class="menu">
-                        <a href="visit-info.html">Visit</a>
-                        <a href="exhibitions.html">Exhibitions</a>
-                        <a href="coming-soon.html">Activities</a>
-                        <a href="coming-soon.html">News</a>      
+                    <nav>
+                        <ul class="nav-bar">
+                            <li class="logo"><a href="index.html"><img src="logo/logo_text_yellow.png"></a></li>
+                            <input type="checkbox" id="check"/>
+                            <span class="menu">
+                                <li class="logo-viol"><a href="index.html"><img src="logo/logo_text_viol.png"></a></li>
+                                <li><a href="visit-info.html">Visit</a></li>
+                                <li><a href="exhibitions.html">Exhibitions</a></li>
+                                <li><a href="coming-soon.html">Activities</a></li>
+                                <li><a href="coming-soon.html">News</a></li>
+                                <li><a href="visit-info.html" class="cta-button-viol">Buy tickets</a></li>
+                             
+                                <label for="check" class="close-menu"><i class="fas fa-times"></i></label>
+                            </span>
+                            <li><a href="visit-info.html" class="cta-button-yell">Buy tickets</a></li>
+                            <label for="check" class="open-menu"><i class="fas fa-bars"></i></label>   
+                        </ul>
                     </nav>
-                    <a href="visit-info.html" class="cta-button-yell">Buy tickets</a>
+                    
                 </div>
             </div>
         </header>
@@ -108,13 +117,13 @@
                 </section>
                 <section class="news">
                     <div class="exhb">
-                        <a href="coming-soon.html"><img src="image/tyrannosaur_exhibition_desktop.jpg" alt="a detailed view of a trex skeleton in a museum "/></a>
+                            <a href="coming-soon.html"><img src="image/tyrannosaur_exhibition_desktop.jpg" alt="a detailed view of a trex skeleton in a museum"/></a>
                     </div>
                     <div class="news-content">
                         <h3>The Age of Giants</h3>
                         <h4>Experience the world in the Age of Dinosaurs and Ice Age</h4>
                         <p>In the Age of Giants exhibition you will encounter nearly twenty five life-sized animal robots - including a mammoth and a saber-toothed cat!</p>
-                        <h4>The exhibition is on display 5.5.2025 - 4.5.2026</h4>
+                        <h4>The exhibition is on display<br/> 5.5.2025 - 4.5.2026</h4>
                         <a href="coming-soon.html" class="cta-button">News</a>
                     </div>                    
                 </section>

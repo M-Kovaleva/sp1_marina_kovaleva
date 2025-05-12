@@ -307,7 +307,7 @@ img{
 }
 
 .nav-page .active:hover{
-    color: var(--color-secondary);
+    text-decoration: none;
 }
 
 

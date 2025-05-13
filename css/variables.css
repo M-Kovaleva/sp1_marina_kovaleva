@@ -10,7 +10,7 @@
     --font-weight-heading: 700;
     --img-border-radius: 0.75rem;
     --background-gradient: linear-gradient(180deg,rgba(116, 15, 217, 0) 31%, rgba(94, 21, 216, 0.55) 71%, rgba(116, 15, 217, 0.55) 77%);
-    --shadow-gradient: 4px 4px 15.2px 2px rgba(94, 21, 216, 0.5);
+    --shadow-gradient: 2px 2px 6px 2px rgba(94, 21, 216, 0.5);
     --img-opacity: 45%
 
     

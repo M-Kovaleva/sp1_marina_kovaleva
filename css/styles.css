@@ -43,6 +43,7 @@ body{
 }
 .page-header{
     background-color: var(--color-accent);
+  
 }    
 .page-main{
     background-color: var(--color-accent);
@@ -114,10 +115,12 @@ img{
     border-radius: var(--img-border-radius);
 }
 
-.logo_image{
+.logo img{
     border-radius: 0;
 }
-
+.logo-viol img{
+    border-radius: 0;
+}
 .cta-button-yell{
   text-align: center;
   color: var(--color-accent);
@@ -128,7 +131,7 @@ img{
   padding-top: 0.5rem;
   padding-bottom: 0.5rem;
   font-family: var(--font);
-  font-size: 1.5rem;
+  font-size: 1.25rem;
   letter-spacing:0.04rem;
   font-weight: var(--font-weight-heading);
   width: 12.5rem;
@@ -148,7 +151,7 @@ img{
   padding-top: 0.5rem;
   padding-bottom: 0.5rem;
   font-family: var(--font);
-  font-size: 1.5rem;
+  font-size: 1.25rem;
   letter-spacing:0.04rem;
   font-weight: var(--font-weight-heading);
   width: 12.5rem;
@@ -167,7 +170,7 @@ img{
   padding-top: 0.5rem;
   padding-bottom: 0.5rem;
   font-family: var(--font);
-  font-size: 1.5rem;
+  font-size: 1.25rem;
   letter-spacing:0.04rem;
   font-weight: var(--font-weight-heading);
   width: 12.5rem;
@@ -190,10 +193,42 @@ img{
     align-items: center;
     list-style: none;
     position: relative;
-    margin-top: 0;
-    margin-bottom: 0;
+    margin-top: 0.5rem;
+    margin-bottom: 0.5rem;
+    padding-right: 2rem;
+    padding-left: 2rem;
+
  
 }
+.nav-bar .logo{
+    margin-top: 0.5rem;
+}
+.logo-viol img{
+    margin-top: 12px;
+}
+
+@media(max-width: 900px){
+    .logo img{
+        width: 75% ;
+    }
+    .footer-item img{
+        width: 75% ;
+    }
+    .open-menu i {
+        transform: translateY(-5%);
+    }
+    .nav-bar .logo-viol img{
+        padding: 0;
+    }
+    .logo-viol img{
+        width: 166.5px;
+        
+        
+    }
+    
+}
+
+
 .menu {
     display:inline-flex;
     width: 100%;
@@ -229,16 +264,16 @@ img{
 .open-menu {
     top: 50%;
     right: 20px;
-    transform: translateY(-50%);
+    transform: translateY(-30%);
   
 }
 .close-menu {
-    top: 45px;
+    top: 16px;
     right: 20px;
 
 }
 .open-menu i, .close-menu i {
-    padding: 10px;
+    padding: 1.5rem;
     font-size: 2rem;
   }
 .nav-bar .cta-button-viol{
@@ -254,11 +289,20 @@ img{
     overflow: hidden;
   }
 
+
 #check {display: none;}
-@media(max-width: 900px){
+
+
+@media(max-width: 1040px){
+    .nav-bar{
+        padding-left: 1.5rem;
+        padding-right: 1.5rem;
+      
+    }   
+  
     .menu {
         flex-direction: column;
-        align-items: center;
+        align-items: left;
         justify-content: flex-start;
         width: 100%;
         height: 100dvh;
@@ -270,7 +314,7 @@ img{
         background-color: var(--color-background);
         transition: all 0.3s ease-in-out;
         overflow-y: auto;
-        padding-top: 60px;
+        padding-top: 20px;
         box-sizing: border-box;
       }
     
@@ -284,7 +328,7 @@ img{
         list-style: none;
     }
     .menu li {
-        margin: 20px 0;
+        margin: 6px 0;
         
     }
     .menu li a {
@@ -989,7 +1033,7 @@ img{
     }
 }
 
-@media(min-width: 1400px){
+@media(min-width: 1300px){
     .exhibitions{
         grid-template-columns:auto auto auto auto;
    

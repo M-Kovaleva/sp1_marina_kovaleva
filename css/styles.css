@@ -204,7 +204,7 @@ img{
     margin-top: 0.5rem;
 }
 .logo-viol img{
-    margin-top: 12px;
+    margin-top: 8px;
 }
 
 @media(max-width: 900px){
@@ -215,7 +215,7 @@ img{
         width: 75% ;
     }
     .open-menu i {
-        transform: translateY(-5%);
+        transform: translateY(-7%);
     }
     .nav-bar .logo-viol img{
         padding: 0;
@@ -223,8 +223,11 @@ img{
     .logo-viol img{
         width: 166.5px;
         
-        
     }
+    .open-menu i, .close-menu i {
+        padding: 1.5rem;
+        width: 1.5rem;
+      }
     
 }
 
@@ -274,7 +277,7 @@ img{
 }
 .open-menu i, .close-menu i {
     padding: 1.5rem;
-    font-size: 2rem;
+    width: 1.5rem;
   }
 .nav-bar .cta-button-viol{
     display: none;

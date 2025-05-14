@@ -19,8 +19,6 @@ body{
     body{
         font-size:var(--text-size-paragraph-desktop);
     }
-
-
     .hero-item h2{
         font-family: var(--font);
         font-weight: 900;
@@ -182,6 +180,7 @@ img{
 .fa-brands{
     margin-left: 1.5rem;
     margin-right: 1.5rem;
+    font-size: var(--text-size-paragraph-desktop);
 }
 
 /* Header */
@@ -365,7 +364,7 @@ img{
     #check:checked ~ .menu {right: 0;}
 }
 
-/* Pge navigation */
+/* Page navigation */
 .nav-page {
     margin-top: 1rem;
     margin-left: 2rem;
@@ -401,6 +400,7 @@ img{
 
 .footer-down{
     display:block;
+    margin-top: 1.5rem;
 }
 .footer-down hr{
     color: var(--color-accent);
@@ -417,6 +417,9 @@ img{
     .footer-container{
         text-align: start;
     }
+    .footer-item p{
+        margin-top: 0;
+    }
 
 }
 @media(min-width: 900px){
@@ -431,12 +434,14 @@ img{
     flex-direction: column;
     align-items: center;
     color: var(--color-accent);
+    margin-top: 1.5rem;
   
   
 }
 .footer-item ul{
     list-style: none;
     padding-left: 0rem;
+    margin: 0;
 }
 .footer-item li{
     text-align: center;
@@ -448,6 +453,8 @@ img{
 
 .footer-item p{
     text-align: center;
+    margin-top: 0;
+
 }
 
 .footer-item .fa-brands{
@@ -1008,7 +1015,7 @@ img{
 
 
 
-.exhibitions.exhb{
+.exhibitions .exhb{
     width: 309px;
     height: 309px;
     background-color: var(--color-primary);

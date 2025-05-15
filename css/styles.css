@@ -1183,6 +1183,10 @@ img{
     display: block;
     border-radius: 0.75rem 0.75rem 0 0;
 }
+.exhibitions .services-item{
+    margin-left: 1rem;
+   
+}
 
 
 .exhibitions{
@@ -1191,6 +1195,7 @@ img{
     align-items: center;
     justify-content:space-around;
     overflow-y: hidden;
+    padding-right: 0.5rem;
 
 } 
 .exhibitions::-webkit-scrollbar{
@@ -1219,6 +1224,9 @@ img{
     .exhibitions{
         display: grid;
         grid-template-columns:auto auto;
+        justify-content: center;
+        column-gap: 1.5rem;
+        padding-right: 0,5rem;
         
     }
 }
@@ -1229,7 +1237,6 @@ img{
         
     }
 }
-
 
 
   /* Life n Universe Exhbition Page */
@@ -1306,6 +1313,9 @@ article{
         margin-top: 2rem;
         margin-bottom: 2rem;
     }
+}
+.h-ligh-container img{
+    box-shadow: var(--shadow-gradient);
 }
    
 @media (min-width: 1400px){

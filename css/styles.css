@@ -1198,8 +1198,6 @@ img{
     margin-bottom: 88px;
 }
 
-
-
 .exhibitions .exhb{
     width: 309px;
     height: 309px;
@@ -1212,7 +1210,7 @@ img{
 
 
 .exhibitions{
-    background-color: var(--color-background);
+    
     display: inline-flex;
     align-items: center;
     justify-content:space-around;

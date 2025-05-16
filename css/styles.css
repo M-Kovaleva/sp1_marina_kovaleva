@@ -74,7 +74,7 @@ h3{
 h4{
     font-family: var(--font);
     font-weight: var(--font-weight-heading);
-    font-size: 1.25rem;
+    font-size: var(--text-size-paragraph-desktop);
     color: var(--color-primary);
     margin: 0;
     letter-spacing:0.04rem
@@ -102,10 +102,10 @@ img{
   border-style: solid;
   border-width: medium;
   border-color: var(--color-secondary);
-  padding-top: 0.5rem;
-  padding-bottom: 0.5rem;
+  padding-top: var( --padding-top-bottom);
+  padding-bottom: var( --padding-top-bottom);
   font-family: var(--font);
-  font-size: 1.25rem;
+  font-size: var(--text-size-paragraph-desktop);
   letter-spacing:0.04rem;
   font-weight: var(--font-weight-heading);
   width: 12.5rem;
@@ -122,10 +122,10 @@ img{
   border-style: solid;
   border-width: medium;
   border-color: var(--color-primary);
-  padding-top: 0.5rem;
-  padding-bottom: 0.5rem;
+  padding-top: var(--padding-top-bottom);
+  padding-bottom: var(--padding-top-bottom);
   font-family: var(--font);
-  font-size: 1.25rem;
+  font-size: var(--text-size-paragraph-desktop);
   letter-spacing:0.04rem;
   font-weight: var(--font-weight-heading);
   width: 12.5rem;
@@ -141,10 +141,10 @@ img{
   color: var(--color-accent);
   background-color: var(--color-primary);
   border-radius: var(--img-border-radius);
-  padding-top: 0.5rem;
-  padding-bottom: 0.5rem;
+  padding-top: var(--padding-top-bottom);
+  padding-bottom: var(--padding-top-bottom);
   font-family: var(--font);
-  font-size: 1.25rem;
+  font-size: var(--text-size-paragraph-desktop);
   letter-spacing:0.04rem;
   font-weight: var(--font-weight-heading);
   width: 12.5rem;
@@ -231,8 +231,8 @@ img{
 .open-menu i, .close-menu i {
     padding-top: 1.5rem;
     padding-bottom: 1.5rem;
-    padding-left: 0.5rem;
-    padding-right: 0.5rem;
+    padding-left: var(--padding-top-bottom);
+    padding-right: var(--padding-top-bottom);
     width: 1.5rem;
   }
 
@@ -442,7 +442,7 @@ img{
     display: flex;
     align-items: center;
     justify-content:space-between;
-    gap: 0.5rem;
+    gap: var(--gap-mobile);
     overflow-y: hidden;
    
 }
@@ -453,18 +453,18 @@ img{
 
 
 .services-item{
-    margin-left: 0.5rem;
-    margin-right: 0.5rem;
+    margin-left: var(--margine-side-services-mobile);
+    margin-right: var(--margine-side-services-mobile);
     margin-top: 1rem;
     margin-bottom: 2rem;
-    width: 309px;
+    width: var(--services-width-heigh);
     scroll-snap-align: start;
     border-radius: var(--img-border-radius);
     box-shadow: var(--shadow-gradient);
 }
 
 .service-info{
-    max-width: 309px;
+    max-width: var(--services-width-heigh);
     height: 150px;
     background-color: var(--color-accent);
     border-radius: 0 0 12px 12px; 
@@ -475,21 +475,21 @@ img{
 }
 
 .services .exhb{
-    width: 309px;
-    height: 309px;
+    width: var(--services-width-heigh);
+    height: var(--services-width-heigh);
     background-color: var(--color-primary);
     display: block;
-    border-radius: 0.75rem 0.75rem 0 0;
+    border-radius: var(--services-border-radius);
 }
 .services-item img{
-    border-radius: 0.75rem 0.75rem 0 0;
+    border-radius: var(--services-border-radius);
 }
 .services-item img:hover{
     opacity: var(--img-opacity);
 }
 .service-info a{font-family: var(--font);
     font-weight: var(--font-weight-heading);
-    font-size: 1.25rem;
+    font-size: var(--text-size-paragraph-desktop);
     color: var(--color-primary);
     margin: 0;
     letter-spacing:0.04rem
@@ -521,8 +521,8 @@ img{
     position: relative;
     display: flex;
     background-color: var(--color-primary);
-    width: 309px;
-    height: 309px;
+    width: var(--services-width-heigh);
+    height: var(--services-width-heigh);
     display: block;
     border-radius: var(--img-border-radius);
     box-shadow: var(--shadow-gradient);
@@ -690,11 +690,11 @@ img{
     
 }
 .services-visit-page .exhb{
-    width: 309px;
-    height: 309px;
+    width: var(--services-width-heigh);
+    height: var(--services-width-heigh);
     background-color: var(--color-primary);
     display: block;
-    border-radius: 0.75rem 0.75rem 0 0;
+    border-radius: var(--services-border-radius);
 }
 
 
@@ -730,11 +730,11 @@ img{
 }
 
 .exhibitions .exhb{
-    width: 309px;
-    height: 309px;
+    width: var(--services-width-heigh);
+    height: var(--services-width-heigh);
     background-color: var(--color-primary);
     display: block;
-    border-radius: 0.75rem 0.75rem 0 0;
+    border-radius: var(--services-border-radius);
 }
 
 
@@ -750,7 +750,7 @@ img{
     padding-right: 1rem;
     padding-left: 1rem;
     padding-bottom: 1rem;
-    gap: 0.5rem;
+    gap: var(--gap-mobile);
 
 } 
 .exhibitions::-webkit-scrollbar{

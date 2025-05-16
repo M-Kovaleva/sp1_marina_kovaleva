@@ -526,6 +526,15 @@ img{
     margin-right: var(--indent-side-mobile);
 
 }
+.hero-item h2{
+    color: var(--color-accent);
+    margin-bottom: 1.5rem;
+}
+.hero-item .cta-button-yell{
+    margin-bottom: 5.25rem;
+    
+}
+
 @media(min-width:700px){
     .hero-home{
         background: var(--background-gradient), url('../image/cute_boy_dressed_space_astronaut_desktop_1.jpg') center top no-repeat;
@@ -536,29 +545,29 @@ img{
     .hero-item{
         margin-left: var(--indent-side-tablet);
     }
+    .hero-item .cta-button-yell{
+        margin-bottom: 0;
+        
+    }
+    
 }
+
 @media(min-width:1512px){
     .hero-item{
         margin-left: var(--indent-side-desktop);
     }
+   
 }    
 @media (min-width: 1400px){
     .hero-home{
         background: var(--background-gradient), url('../image/cute-boy-dressed-space-astronaut_desktop_2.jpg') center top no-repeat;
         background-size: cover;
     }
+   
     
 }
 
 
-.hero-item h2{
-    color: var(--color-accent);
-    margin-bottom: 1.5rem;
-}
-.hero-item .cta-button-yell{
-    margin-bottom: 5rem;
-    
-}
 
 /* Info Section */
 
@@ -1134,54 +1143,11 @@ img{
 
 
 
-  /* Exhibitions Page*/.hero-home{
-    position: relative;
-    display: flex;
-    flex-direction: column;
-    justify-content: end;
-    background: var(--background-gradient), url('../image/cute_boy_dressed_space_astronaut_mobile.jpg') center top no-repeat; 
-    background-size: cover;
-    min-height: 95vh;
-    text-align: center;
-}
-.hero-item{
-    margin-left: var(--indent-side-mobile);
-    margin-right: var(--indent-side-mobile);
-
-}
-@media(min-width:700px){
-    .hero-home{
-        background: var(--background-gradient), url('../image/cute_boy_dressed_space_astronaut_desktop_1.jpg') center top no-repeat;
-        background-size: cover;
-        justify-content: center;
-        text-align: start;
-    }
-    .hero-item{
-        margin-left: var(--indent-side-tablet);
-    }
-}
-@media(min-width:1512px){
-    .hero-item{
-        margin-left: var(--indent-side-desktop);
-    }
-}    
-@media (min-width: 1400px){
-    .hero-home{
-        background: var(--background-gradient), url('../image/cute-boy-dressed-space-astronaut_desktop_2.jpg') center top no-repeat;
-        background-size: cover;
-    }
-    
-}
+  /* Exhibitions Page*/
 
 
-.hero-item h2{
-    color: var(--color-accent);
-    margin-bottom: 1.5rem;
-}
-.hero-item .cta-button-yell{
-    margin-bottom: 5rem;
-    
-}
+
+
   .hero-exhb{
     position: relative;
     display: flex;
@@ -1192,7 +1158,13 @@ img{
     min-height: 95vh;
     text-align: center;
 }
+@media(max-heigh:650px){
+    .hero-exhb{
+        background: var(--background-gradient), url('../image/plasma_ball_exhibition_desktop_3.jpg') center top no-repeat; 
+    }
  
+}
+
 @media(min-width:700px){
     .hero-exhb{
         background: var(--background-gradient), url('../image/plasma_ball_exhibition_desktop.jpg') center top no-repeat;

@@ -89,6 +89,7 @@
     }
     .nav-page {
         margin-left: var(--indent-side-tablet);
+        margin-bottom: var(--margine-section-desktop);
     }
     .hero-home{
         background: var(--background-gradient), url('../image/cute_boy_dressed_space_astronaut_desktop_1.jpg') center top no-repeat;
@@ -174,6 +175,7 @@
     .visit-info{
         margin-left: var(--indent-side-tablet);
         margin-right: var(--indent-side-tablet);
+        margin-bottom: var(--margine-section-desktop);
     } 
     .services-visit-page .services-container::-webkit-scrollbar-track{
         background: var(--color-secondary);
@@ -198,6 +200,7 @@
         padding-right: 1rem;
         padding-left: 1rem;
         padding-top: 2.5rem;
+        padding-bottom: 2rem;
     
         
     }
@@ -210,6 +213,7 @@
     article{
         margin-left: var(--indent-side-tablet);
         margin-right: var(--indent-side-tablet);
+        margin-bottom: 3rem;
     }
     .h-ligh-container{
         gap: 40px;
@@ -233,6 +237,14 @@
         margin-top: 2rem;
         margin-bottom: 2rem;
     }
+    .coming-soon{
+        margin-top: var(--margine-section-desktop);
+        margin-bottom: var(--margine-section-desktop);
+    }
+    #nav-exhb{
+        margin-bottom: 7.5rem;
+    }
+    
             
 }
 

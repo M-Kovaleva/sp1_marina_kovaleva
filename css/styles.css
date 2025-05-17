@@ -387,7 +387,7 @@ img{
     flex-grow: 1;
     flex-direction: column;
     align-items:normal;
-    margin-bottom: var(--indent-text-icons);
+    margin-bottom: 1.125rem;
  
 }
 .info-item a{

@@ -1,0 +1,51 @@
+/* Life n Universe Exhbition Page */
+
+.hero-space{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    background: var(--background-gradient), url('../image/earth_seen_from_space_mobile.jpg') center top no-repeat; 
+    background-size: cover;
+    min-height: 95vh;
+    text-align: center;
+}
+
+article{
+    background: var(--color-accent);
+    margin-left: var(--indent-side-mobile);
+    margin-right: var(--indent-side-mobile);
+    margin-bottom: 1.75rem;
+}
+
+.h-lights{
+    background: var(--color-background);
+}
+
+.h-ligh-container{
+    height: auto;
+    margin-left: var(--indent-side-mobile);
+    margin-right: var(--indent-side-mobile);
+    margin-bottom: 6.5rem;
+    display: flex;
+    align-items: center;
+    justify-content:space-around;
+    gap: var(--gap-mobile);
+    overflow-y: hidden;
+}
+.h-ligh-container::-webkit-scrollbar{
+    width: 0;
+}
+.h-lights-item{
+    margin-top: var(--margin-services-mobile);
+    margin-bottom: var(--margin-services-mobile);
+    margin-left: var(--margine-side-services-mobile);
+    margin-right: var(--margine-side-services-mobile);
+  
+}
+
+      
+.h-ligh-container img{
+    box-shadow: var(--shadow-gradient);
+}
+   

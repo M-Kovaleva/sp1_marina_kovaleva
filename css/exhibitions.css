@@ -1,0 +1,44 @@
+/* Exhibitions Page - Hero section*/
+
+.hero-exhb{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    background: var(--background-gradient), url('../image/plasma_ball_exhibition_mobile.jpg') center top no-repeat; 
+    background-size: cover;
+    min-height: 95vh;
+    text-align: center;
+}
+.hero-item h1{
+    color: var(--color-accent);
+}
+#nav-exhb{
+    margin-bottom: 5.5rem;
+}
+
+
+/* Exhibition page - exhibition section */
+
+.exhibitions .exhb{
+    width: var(--services-width-heigh);
+    height: var(--services-width-heigh);
+    background-color: var(--color-primary);
+    display: block;
+    border-radius: var(--services-border-radius);
+}
+.exhibitions{
+    display: inline-flex;
+    align-items: center;
+    justify-content:space-around;
+    overflow-y: hidden;
+    padding-top: var(--indent-text-icons);
+    padding-right: var(--indent-side-mobile);
+    padding-left: var(--indent-side-mobile);
+    padding-bottom: 1rem;
+    gap: var(--gap-mobile);
+} 
+.exhibitions::-webkit-scrollbar{
+    width: 0;
+    height: 0;
+}

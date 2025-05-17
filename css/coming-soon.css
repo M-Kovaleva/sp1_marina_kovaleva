@@ -1,0 +1,39 @@
+/* Coming soon page */
+
+.coming-soon{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: var(--margine-section-mobile);
+    margin-bottom: var(--margine-section-mobile);
+
+}
+
+.coming-soon h1{
+    text-align: center;
+    font-family: var(--font);
+    font-weight: var(--font-weight-heading);
+    font-size: 2.25rem;
+    color: var(--color-primary);
+    margin: 0;
+    line-height:initial;
+    letter-spacing:0.04rem
+}
+
+.coming-soon p{
+    margin-top: var(--indent-text-icons);
+    margin-bottom: var(--margine-items-mobile);
+}
+.coming-soon a{
+    margin-bottom: var(--margine-items-mobile);
+}
+
+.coming-item{
+    text-align: center;
+}
+
+.coming-item img{
+    margin-bottom: var(--margine-section-mobile);
+    width: 128px
+}

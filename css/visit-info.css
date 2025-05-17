@@ -1,0 +1,86 @@
+/* Visit-info Page*/
+
+/* Visit page - Hero section */
+  
+.hero-visit{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    background: var(--background-gradient), url('../image/newton_science_museum_mobile.jpg') center top no-repeat; 
+    background-size: cover;
+    min-height: 30vh;
+    text-align: center;
+}
+.hero-visit .hero-item h1{
+    color: var(--color-accent);
+    margin-bottom: 2.75rem;
+    font-weight: var(--font-weight-heading);
+    font-size: 2.25rem;
+    line-height:initial;
+    letter-spacing:0.04rem
+}
+    
+
+/* Visit page - Info section */
+
+.visit-info{
+    display: grid;
+    row-gap: var(--indent-text-icons);
+    grid-template-columns:auto;
+    margin-left: var(--indent-side-mobile);
+    margin-right: var(--indent-side-mobile);
+    margin-bottom: var(--margine-section-mobile);
+}
+.visit-info-item{
+    background: var(--color-background);
+    min-width: 240px;
+    min-height: 279px;
+    border-radius: var(--img-border-radius);
+    display: flex;
+    flex-direction: column;
+    justify-content:start;
+    align-items: center;
+}
+#info-price{
+    background: var(--color-secondary);
+}
+.visit-info-item-price p{
+    font-size: var(--text-size-paragraph-mobile);
+    line-height: 1rem;
+
+}
+.head-info{
+    display:inline-flex;
+    gap: var(--indent-side-mobile);
+}
+.visit-info-item-content{
+    margin-top: var(--indent-text-icons);
+    margin-bottom: var(--indent-text-icons);
+}
+.head-info img{
+    width: 2rem;
+    height: 2rem;
+    border-radius: 0;
+}
+.visit-info-item-content .active {
+    text-decoration: underline;
+}
+.visit-info-item-content .active:hover{
+    color: var(--color-secondary);
+}
+
+
+/* Visit page - Services section */
+
+
+.services-visit-page{
+    background-color: var(--color-secondary);
+}
+.services-visit-page .exhb{
+    width: var(--services-width-heigh);
+    height: var(--services-width-heigh);
+    background-color: var(--color-primary);
+    display: block;
+    border-radius: var(--services-border-radius);
+}

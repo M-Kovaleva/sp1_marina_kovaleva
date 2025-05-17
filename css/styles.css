@@ -180,7 +180,7 @@ img{
     margin-top: 0.5rem;
 }
 .logo-viol img{
-    margin-top: 8px;
+    margin-top: 0.5rem;
 }
 
 
@@ -190,12 +190,12 @@ img{
     width: 100%;
     max-width: 100vw;
     box-sizing: border-box;
-    padding: 20px;
+    padding: 1.25rem;
 
 
 }
 .menu li {
-    padding-left: 30px;
+    padding-left: 1.85rem;
 }
 .menu li a {
     display: inline-block;
@@ -219,28 +219,28 @@ img{
 }
 .open-menu {
     top: 50%;
-    right: 20px;
+    right: 1.25rem;
     transform: translateY(-30%);
   
 }
 .close-menu {
-    top: 16px;
-    right: 20px;
+    top: 1rem;
+    right: 1.25rem;
 
 }
 .open-menu i, .close-menu i {
-    padding-top: 1.5rem;
-    padding-bottom: 1.5rem;
+    padding-top: var(--indent-text-icons);
+    padding-bottom: var(--indent-text-icons);
     padding-left: var(--padding-top-bottom);
     padding-right: var(--padding-top-bottom);
-    width: 1.5rem;
+    width: var(--indent-text-icons);
   }
 
     
 
 .nav-bar .cta-button-viol{
     display: none;
-    margin-top: 24px;
+    margin-top: 1.5rem;
 }
 .nav-bar .logo-viol{
     display: none;
@@ -263,7 +263,7 @@ img{
     margin-top: 1rem;
     margin-left: var(--indent-side-mobile);
     margin-right: 0;
-    margin-bottom: 3rem;
+    margin-bottom: var(--margine-section-mobile);
 }
 
 
@@ -291,12 +291,12 @@ img{
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    margin-top: 1.5rem;
+    margin-top: var(--indent-text-icons);
 }
 
 .footer-down{
     display:block;
-    margin-top: 1.5rem;
+    margin-top: var(--indent-text-icons);
 }
 .footer-down hr{
     color: var(--color-accent);
@@ -311,11 +311,8 @@ img{
 .footer-item{
     display: flex;
     flex-direction: column;
-  
     color: var(--color-accent);
-    margin-top: 1.5rem;
-  
-  
+    margin-top: var(--indent-text-icons);
 }
 .footer-item ul{
     list-style: none;
@@ -359,20 +356,21 @@ img{
     background: var(--background-gradient), url('../image/cute_boy_dressed_space_astronaut_mobile.jpg') center top no-repeat; 
     background-size: cover;
     min-height: 95vh;
-    margin-bottom: 2.25rem;
+    margin-bottom: var(--margine-items-mobile);
     text-align: center;
 }
 .hero-item{
     margin-left: var(--indent-side-mobile);
     margin-right: var(--indent-side-mobile);
+    margin-bottom: var(--margine-items-mobile);
 
 }
 .hero-item h2{
     color: var(--color-accent);
-    margin-bottom: 1.5rem;
+  
 }
 .hero-item .cta-button-yell{
-    margin-bottom: 5.25rem;
+    margin-bottom: var(--margine-section-mobile);
     
 }
 
@@ -389,7 +387,7 @@ img{
     flex-grow: 1;
     flex-direction: column;
     align-items:normal;
-    margin-bottom: 1rem;
+    margin-bottom: var(--indent-text-icons);
  
 }
 .info-item a{
@@ -408,12 +406,12 @@ img{
 .info-item{
     display: flex;
     flex-direction: row;
-    margin-bottom: 1.5rem;
+    margin-bottom: var(--indent-text-icons);
     padding: 1rem;
     border-radius: var(--img-border-radius);
 }
 .info-item-text{
-    margin-left: 2.25rem;
+    margin-left: var(--margine-items-mobile);
 }
 
 /* Services Sections - Exhibitions, Activities ect. */
@@ -424,7 +422,7 @@ img{
 .services .cta-button-viol{
     margin-left: var(--indent-side-mobile);
     margin-right: var(--indent-side-mobile);
-    margin-bottom: 7rem;
+    margin-bottom: var(--margine-section-mobile);
 } 
 
 .section-name{
@@ -438,7 +436,7 @@ img{
     height: auto;
     margin-left: var(--indent-side-mobile);
     margin-right: var(--indent-side-mobile);
-    margin-bottom: 4px;
+    margin-bottom: 0,25rem;
     display: flex;
     align-items: center;
     justify-content:space-between;
@@ -467,11 +465,11 @@ img{
     max-width: var(--services-width-heigh);
     height: 150px;
     background-color: var(--color-accent);
-    border-radius: 0 0 12px 12px; 
+    border-radius: 0 0 0.75rem 0.75rem; 
     padding-top: 0.75rem ;
     padding-left: 1rem;
     padding-right: 1rem;
-    padding-bottom: 1.5rem;
+    padding-bottom: var(--indent-text-icons);
 }
 
 .services .exhb{
@@ -501,7 +499,9 @@ img{
     font-size: var(--text-size-paragraph-mobile);
 }
 
-
+#cta-button-viol-home{
+    margin-bottom: 6.5rem;
+}
 
 
 /* News Section*/
@@ -529,7 +529,7 @@ img{
     margin-top: -40px;
     margin-left: var(--indent-side-mobile);
     margin-right: var(--indent-side-mobile);
-    margin-bottom: 1rem;
+    margin-bottom: var(--indent-text-icons);
 }
 
 .news img{
@@ -551,12 +551,12 @@ img{
     text-align:start;
 }
 .news-content h3{
-    margin-bottom: 2.25rem;
+    margin-bottom: var(--indent-text-icons);
 }
 
 .news-content a{
-    margin-top: 2.25rem;
-    margin-bottom: 2.25rem;
+    margin-top: var(--margine-items-mobile);
+    margin-bottom: var(--margine-items-mobile);
 }
 
 
@@ -585,8 +585,8 @@ img{
     flex-direction: column;
     margin-left: var(--indent-side-mobile);
     margin-right: 2rem;
-    margin-top: 3rem;
-    margin-bottom: 3rem;
+    margin-top: var(--margine-section-mobile);
+    margin-bottom: var(--margine-section-mobile);
 
 }
 .sign-in-item-content .cta-button{
@@ -621,18 +621,18 @@ img{
 }
 .hero-visit .hero-item h2{
     color: var(--color-accent);
-    margin-bottom: 5rem;
+    margin-bottom: 2.75rem;
 }
 
 /* Info section - Visit page */
 
 .visit-info{
     display: grid;
-    row-gap: 1.5rem;
+    row-gap: var(--indent-text-icons);
     grid-template-columns:auto;
     margin-left: var(--indent-side-mobile);
     margin-right: var(--indent-side-mobile);
-    margin-bottom: 5rem;
+    margin-bottom: var(--margine-section-mobile);
 }
 
 
@@ -665,8 +665,8 @@ img{
     gap: 1rem;
 }
 .visit-info-item-content{
-    margin-top: 1.5rem;
-    margin-bottom: 1.5rem;
+    margin-top: var(--indent-text-icons);
+    margin-bottom: var(--indent-text-icons);
 }
 .head-info img{
     width: 2rem;
@@ -718,15 +718,13 @@ img{
 
 .hero-item h2{
     color: var(--color-accent);
-    margin-bottom: 1.5rem;
-}
-.hero-item a{
-    margin-bottom: 3rem;
-    
+
 }
 
+
+
 #nav-exhb{
-    margin-bottom: 88px;
+    margin-bottom: 5.5rem;
 }
 
 .exhibitions .exhb{
@@ -746,7 +744,7 @@ img{
     align-items: center;
     justify-content:space-around;
     overflow-y: hidden;
-    padding-top: 1.5rem;
+    padding-top: var(--indent-text-icons);
     padding-right: 1rem;
     padding-left: 1rem;
     padding-bottom: 1rem;
@@ -775,6 +773,7 @@ article{
     background: var(--color-accent);
     margin-left: var(--indent-side-mobile);
     margin-right: var(--indent-side-mobile);
+    margin-bottom: 1.75rem;
 }
 
 .h-lights{
@@ -785,11 +784,11 @@ article{
     height: auto;
     margin-left: var(--indent-side-mobile);
     margin-right: var(--indent-side-mobile);
-    margin-bottom: 7rem;
+    margin-bottom: 6.5rem;
     display: flex;
     align-items: center;
     justify-content:space-around;
-    gap: 24px;
+    gap: 1.5rem;
     overflow-y: hidden;
 }
 .h-ligh-container::-webkit-scrollbar{
@@ -813,8 +812,8 @@ article{
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    margin-top: 4rem;
-    margin-bottom: 4rem;
+    margin-top: var(--margine-section-mobile);
+    margin-bottom: var(--margine-section-mobile);
 
 }
 
@@ -823,11 +822,11 @@ article{
 }
 
 .coming-soon p{
-    margin-top: 1.5rem;
-    margin-bottom: 3rem;
+    margin-top: var(--indent-text-icons);
+    margin-bottom: var(--margine-items-mobile);
 }
 .coming-soon a{
-    margin-bottom: 2.25rem;
+    margin-bottom: var(--margine-items-mobile);
 }
 
 .coming-item{
@@ -835,7 +834,7 @@ article{
 }
 
 .coming-item img{
-    margin-bottom: 3rem;
+    margin-bottom: var(--margine-section-mobile);
     width: 128px
 }
 

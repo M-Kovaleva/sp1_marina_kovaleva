@@ -38,6 +38,13 @@
     align-items:normal;
     margin-bottom: 1.125rem;
 }
+.info h2{
+    font-family: var(--font);
+    font-weight: var(--font-weight-heading);
+    font-size: 1.5rem;
+    color: var(--color-primary);
+    margin: 0;
+}
 .info-item a{
     text-decoration: underline;
 }

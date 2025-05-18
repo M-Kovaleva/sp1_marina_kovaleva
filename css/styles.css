@@ -83,6 +83,7 @@ a{
 img{
     border-radius: var(--img-border-radius);
 }
+
 .logo img{
     border-radius: 0;
 }
@@ -300,69 +301,7 @@ img{
     margin-left: 0;
 }
 
-  /* Home */
-
-  /* Home - Hero Section */
-
-  .hero-home{
-    position: relative;
-    display: flex;
-    flex-direction: column;
-    justify-content: end;
-    background: var(--background-gradient), url('../image/cute_boy_dressed_space_astronaut_mobile.jpg') center top no-repeat; 
-    background-size: cover;
-    min-height: 95vh;
-    margin-bottom: var(--margine-items-mobile);
-    text-align: center;
-}
-.hero-item{
-    margin-left: var(--indent-side-mobile);
-    margin-right: var(--indent-side-mobile);
-    margin-bottom: var(--margine-items-mobile);
-}
-.hero-item h1{
-    color: var(--color-accent);
-    font-weight: var(--font-weight-heading);
-    font-size: 2.25rem;
-    line-height:initial;
-    letter-spacing:0.04rem
-}
-.hero-item .cta-button-yell{
-    margin-bottom: var(--margine-section-mobile);
-}
-
-/* Info Section */
-
-.info{
-    display: flex;
-    flex-grow: 1;
-    flex-direction: column;
-    align-items:normal;
-    margin-bottom: 1.125rem;
-}
-.info-item a{
-    text-decoration: underline;
-}
-.info-item a:hover{
-    text-decoration: none;
-}
-.info-item img{
-    width: 2rem;
-    height: 2rem;
-    margin-top: 10px;
-    border-radius: 0;
-}
-.info-item{
-    display: flex;
-    flex-direction: row;
-    margin-bottom: var(--indent-text-icons);
-    padding: var(--indent-side-mobile);
-    border-radius: var(--img-border-radius);
-}
-.info-item-text{
-    margin-left: var(--margine-items-mobile);
-}
-
+  
 
 /* Services Sections - Exhibitions, Activities ect. */
     

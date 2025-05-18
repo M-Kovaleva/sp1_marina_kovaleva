@@ -9,10 +9,24 @@
     background-size: cover;
     min-height: 95vh;
     text-align: center;
+    margin-bottom: var(--margine-items-mobile);
 }
-.hero-item h1{
+.hero-exhb .hero-item{
+    margin-left: var(--indent-side-mobile);
+    margin-right: var(--indent-side-mobile);
+    margin-bottom: var(--margine-items-mobile);
+}
+.hero-exhb .hero-item h1{
     color: var(--color-accent);
+    font-weight: var(--font-weight-heading);
+    font-size: 2.25rem;
+    line-height:initial;
+    letter-spacing:0.04rem
 }
+.hero-exhb .hero-item .cta-button-yell{
+    margin-bottom: var(--margine-section-mobile);
+}
+
 #nav-exhb{
     margin-bottom: 5.5rem;
 }
@@ -32,7 +46,7 @@
     align-items: center;
     justify-content:space-around;
     overflow-y: hidden;
-    padding-top: var(--indent-text-icons);
+    padding-top: 0;
     padding-right: var(--indent-side-mobile);
     padding-left: var(--indent-side-mobile);
     padding-bottom: 1rem;

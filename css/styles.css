@@ -18,10 +18,13 @@ body{
     background-color: var(--color-accent);
     display: flex;
     flex-direction: column;
-    height: 100vh;
+    min-height: 100vh;
 }
 .page-header{
     background-color: var(--color-accent);
+     position: sticky;
+    top: 0;
+    z-index: 999;
 }    
 .page-main{
     background-color: var(--color-accent);
@@ -154,7 +157,6 @@ img{
 }
 
 /* Header */
-
 .nav-bar {
     display: flex;
     justify-content: space-between;
